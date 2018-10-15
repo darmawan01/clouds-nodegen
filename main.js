@@ -16,7 +16,7 @@ const command = argument.slice(0, 5);
 // console.log(command);
 
 if(command != 'cloud'){
-    console.log("Sorry, wrong argument !\nPlease check user guide or try 'node main.js cloud:help'");
+    console.log("Sorry, wrong argument !\nPlease check user guide or try 'node main.js cloud:helps'");
     process.exit(-1)
 }
 
@@ -35,9 +35,35 @@ switch (args) {
         console.log("Creating route with name: '"+param+"'......");
         cloud_nodgen.generate(args, param)
         break;
+    
+    case 'helps':
+        console.log(`
+        Clouds Node Generator version 1.0
+        License: ISC
+        Author: Darmawan Zulkifli
+
+        Usage: node main.js cloud:[Option] [Parameter/Name]
+
+        Options:
+        - controllers \t: this option will create your controller with name like [Parameter/Name].
+        - models \t: this option will create your models with name like [Parameter/Name].
+        - routes \t: this option will create your routes with name like [Parameter/Name].
+        - version \t: this option will show you this package version.
+
+        `);
+        break;
+    
+    case 'version':
+        console.log(`
+        Clouds Node Generator version 1.0
+        License: ISC
+        Author: Darmawan Zulkifli
+        `);
+        
+        break;
 
     default:
-        console.log("Sorry, wrong argument '"+args+"'!\nPlease check user guide or try 'node main.js cloud:help'");
+        console.log("Sorry, wrong argument '"+args+"'!\nPlease check user guide or try 'node main.js cloud:helps'");
         break;
 }
 
