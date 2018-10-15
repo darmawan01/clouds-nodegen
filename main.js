@@ -39,7 +39,7 @@ switch (args) {
     case 'helps':
         console.log(`
         Clouds Node Generator version 1.0
-        License: ISC
+        License: APACHE
         Author: Darmawan Zulkifli
 
         Usage: node main.js cloud:[Option] [Parameter/Name]
@@ -56,7 +56,7 @@ switch (args) {
     case 'version':
         console.log(`
         Clouds Node Generator version 1.0
-        License: ISC
+        License: APACHE
         Author: Darmawan Zulkifli
         `);
         

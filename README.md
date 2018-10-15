@@ -1,8 +1,8 @@
-# Clouds Node Generator
-# Useing
+# Clouds Node Generator Version 1.0
+# Useing:
     `
         Clouds Node Generator version 1.0
-        License: ISC
+        License: APACHE
         Author: Darmawan Zulkifli
 
         Usage: node main.js cloud:[Option] [Parameter/Name]
